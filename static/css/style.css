@@ -1,0 +1,20 @@
+body {
+  background-color: #eeeeee;
+}
+#averageDegreesLineChart {
+  height: 250px;
+}
+
+#cautiontable thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.caution {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
