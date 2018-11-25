@@ -7,7 +7,7 @@ from mongoengine import *
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 
-token = "088a245760a1d4e479758249087ad11a11cd6221"
+token = "YOUR TOKEN HERE"
 app = Flask(__name__)
 
 class Post(Document):
