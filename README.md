@@ -2,4 +2,4 @@
 ## Demo: http://aqi.us.to:5000/
 ## Data source: http://aqicn.org/city/india/new-delhi/us-embassy/
 ### Snapshot
-![snapshot](static/img/snapshot.JPG?raw=true "Snapshot")
+![snapshot](static/img/snapshot.PNG?raw=true "Snapshot")
