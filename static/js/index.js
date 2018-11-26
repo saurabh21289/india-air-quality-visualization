@@ -1,10 +1,11 @@
 nv.addGraph(function() {
-var format = d3.time.format("%Y-%d-%m %H:%M:%S").parse;
+var format = d3.time.format("%Y-%m-%d %H:%M:%S").parse;
 var chart = nv.models.multiBarChart()
   .useInteractiveGuideline(true);;
 chart.xAxis
 .tickFormat(function(d) {
-  return d3.time.format('%d-%m-%y %H:%M:%S')(format(d));
+  // console.log(d)
+  return d3.time.format('%Y-%m-%d %H:%M:%S')(format(d));
 })
 chart.yAxis
 .tickFormat(d3.format('02f'));

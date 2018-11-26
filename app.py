@@ -7,7 +7,7 @@ from mongoengine import *
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 
-token = "YOUR TOKEN HERE"
+token = ""
 app = Flask(__name__)
 
 class Post(Document):
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     connect('Climate_database', host='localhost', port=27018)
     getNewData()
     scheduler = BackgroundScheduler()
-    scheduler.add_job(getNewData, 'interval', seconds=3600)
+    scheduler.add_job(getNewData, 'interval', seconds=900)
     # scheduler.add()
     scheduler.start()
     try:
